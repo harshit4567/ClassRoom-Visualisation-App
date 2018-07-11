@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harshit.post.Activity">
+
+    <Button
+        android:id="@+id/showData"
+        android:layout_width="127dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="showData"
+        android:text="@string/show_data"
+        app:layout_constraintBottom_toTopOf="@+id/selectSeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addData"
+        app:layout_constraintTop_toBottomOf="@+id/displayClassroom" />
+
+    <Button
+        android:id="@+id/addData"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:onClick="addData"
+        android:text="Edit Data"
+        app:layout_constraintBottom_toTopOf="@+id/selectSeat"
+        app:layout_constraintEnd_toStartOf="@+id/showData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayClassroom" />
+
+    <TextView
+        android:id="@+id/Network_status"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:text="@string/internet_not_working"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGenerator" />
+
+    <Button
+        android:id="@+id/selectSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectSeat"
+        android:text="@string/select_seat"
+        app:layout_constraintBottom_toTopOf="@+id/layoutGenerator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showData" />
+
+    <Button
+        android:id="@+id/displayClassroom"
+        android:layout_width="110dp"
+        android:layout_height="57dp"
+        android:onClick="displayClassroom"
+        android:text="@string/classroom_display"
+        app:layout_constraintBottom_toTopOf="@+id/showData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/layoutGenerator"
+        android:layout_width="125dp"
+        android:layout_height="77dp"
+        android:onClick="layoutGenerator"
+        android:text="@string/class_layout_generator"
+        app:layout_constraintBottom_toTopOf="@+id/Network_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSeat" />
+
+</android.support.constraint.ConstraintLayout>
